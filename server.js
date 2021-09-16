@@ -9,7 +9,7 @@ let io = require('socket.io')(http);
 //const MongoClient = require('mongodb').MongoClient;
 
 // routes
-let projectsRoute = require('./routes/projects')
+let projectsRoute = require('routes/projects.js')
 
 
 var port = process.env.PORT || 8080;
