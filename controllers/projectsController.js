@@ -1,14 +1,19 @@
-let Service = require("../services");
+let service = require('../services');
 
-const getProjects = (res) => {
-    console.log('controller ')
-    Service.ProjectService.getAllProjects(res)
+const mainProject = (res) => {
+    service.projectService.mainProject(res);
+}
+const chessProject = (res) => {
+    service.projectService.chessProject(res);
+}
+const weatherApp = (res) => {
+    service.projectService.weatherApp(res);
 }
 
-const createProject = (data, res) => {
-    Service.ProjectService.insertProject(data,res)
+const sqlGenerator = (res) => {
+    service.projectService.sqlGenerator(res);
 }
 
 module.exports = {
-    getProjects, createProject
+    mainProject, chessProject, weatherApp, sqlGenerator
 }
