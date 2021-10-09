@@ -1,120 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Deakin Crowds</title>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Services</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- Compiled and minified CSS -->
-    <!-- Materialze-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+    <body>
 
-    <!-- Materialize icons-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link href="styles.css" rel="stylesheet">
-</head>
+      
+  <!-- Switch -->
+  <form action="/switch" method="post">
+  <div class="switch">
+    <label>
+      Off
+      <input type="checkbox" name = "cb">
+      <span class="lever"></span>
+      On
+    </label>
 
-<body>
-    <header>
-        <nav>
-            <div class="nav-wrapper" style=" background-color: #9E65A9;">
-                <a href="#" class="brand-logo" style="height: 100%;">
-                    <img src="assets/ale.jpg" alt="" class="circle responsive-img"
-                        style="height: 100%;padding-top: 5px; padding-left: 15px;"> <!-- notice the "circle" class -->
+    <input type = "submit" ></submit>
 
-                </a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="https://www.linkedin.com/in/alessiobonti">Linkedin</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
+  </div>
+  </form>
+       
+        <nav class = "blue-grey">
+          
+             <div class = "top-nav">
+               <ul>
+                 <li><a href = "./index.html">Home</a></li>
+                 <li><a href = "#">About</a></li>
+                 <li><a href = "#">Contact</a></li> 
+               </ul>
+              </div>
 
-        <div class="container">
-            <h1 class="title">Deakin Crowds</h1>
-            <div class="row">
-                <p class="flow-text mainText">Welcome to Deakin's projects and crowdfunding platform</p>
-            </div>
-            <div class="row center" style="height: 150px;">
-                <img src="assets/ale2.jpg" alt="" class="circle responsive-img"
-                    style="height: 100%;padding-top: 5px; padding-left: 15px;"> <!-- notice the "circle" class -->
-            </div>
-            <div class="row center " style="padding-top:50px;">
-                <a id="testButton" class="waves-effect waves-light btn-large modal-trigger" href="#modal1" style="background-color: #9E65A9;"><i
-                        class="material-icons left" style="color:white; font-size:larger ">emoji_people</i>Add Project</a>
-            </div>
-
-            <div class="container">
-                <div class="row" id="listProjects">
                
-
-                </div>
-            </div>
-        
             
-        </div>
+               
+          </div>
+          </nav>
 
-    </main>
-    <footer class="page-footer">
-        <div class="footer-copyright">
-            <div class="container">
-                © 2020 Copyright AlexNexus
-                <a class="grey-text text-lighten-4 right" href="https://github.com/alexbonti/node-material"><img
-                        src="assets/git-logo.svg" style="height: 20px; padding-right: 15px;"></i>Boiler plate here !</a>
+          <div class = "top-nav">
+              <a  href = "https://www.linkedin.com/in/jordan-litsas-2760a81b8/?originalSubdomain=au">
+                <svg class = "contact-img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href = "https://github.com/jordanlitsas">
+                <img src = "https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" class = "contact-img">
+              </a>
+              <a href="path_to_file" download="proposed_file_name">
+                <img src = "https://uxwing.com/wp-content/themes/uxwing/download/42-business-professional-services/resume-cv.png" class = "contact-img">
+              </a>      
+          </div>
+
+          <div class = "row">
+            <div class = "col s3"></div>
+            <div class = "col s6">
+              <p id = "about-me">
+                Hi there, <br>
+                as a software engineer, I’m interested in turning ideas into a running program. I’m intrigued by the 
+                prospect of web development as an abundant platform that can support any simple or overly complex 
+                machination.  My website is a collection of the software I have developed, an area where I can showcase my 
+                technical abilities.  One of my greatest interests is how as developers we can develop software as an 
+                intermediary UI for non-coders to interact with complex technology. Whether it’s web or software and 
+                services development, I’m here to make your problems my challenge.
+              </p>
             </div>
-        </div>
-    </footer>
+            
+          </div>
 
-    <!-- socket IO Served by the server -->
-    <script src="/socket.io/socket.io.js"></script>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <script src="env.js"></script>
+          
+          <div class = "container">
+              <div class="row"> 
 
-</body>
+                  <!--Assigment 2 Card-->
+                  <div class="col s12 m6" >
+                      <div class="card small blue-grey darken-1">
+                          <div class="card-content white-text">
+                              <span class="card-title">Assignment 2</span>
+                            <p>
+                                This project will be assignment 2 of SIT725. It is obviously not done yet and doesn't have the associated information to write about. Blah blah 
+                                blah, it's going to be really good though.
+                            </p>
+                              <div class = "row">
+                                  <div class = "col s6">
+                                    <ul>
+                                      <li>unknown tech</li>
+                                      <li>unknown tech</li>
+                                      <li>unknown tech</li>
+                                    </ul>
+                                </div>
+                                <div class = "col s6">
+                                    <div class = "project-links">
+                                        <a href="/projects/mainProject" class = "waves-effect waves-light btn project-link-item">
+                                          <i class="material-icons right">cloud</i>
+                                          Try it out
+                                        </a>
+                                        <a href="https://github.com/jordanlitsas" class = "waves-effect waves-light btn project-link-item">
+                                          <i class="material-icons right">cloud</i>
+                                          GitHub
+                                        </a>
+                                      </div>
+                                  </div>             
+                            </div>
+                        </div>
+                      </div>
+                    </div> 
 
+                    <!--SQLite3 DBMS Card-->
+                      <div class="col s12 m6"> 
+                          <div class="card small blue-grey darken-1">
+                            <div class="card-content white-text">
+                              <span class="card-title">Assignment 1 Main Project - SQL Database Generator</span>
+                              <p>
+                                I know it will involve creating an entity-relationship diagram, and generating an empty SQLite3 database with NodeJS.
+                              </p>
+                              <br>
+
+                              <div class = "row">
+                                <div class = "col s6">
+                                  <ul>
+                                    <li>HTML, CSS, JS</li>
+                                    <li>Node.js</li>
+                                    <li>SQL</li>
+                                  </ul>
+                                </div>
+                                <div class = "col s6">
+                                  <div class = "project-links">
+                                    <a href="/projects/sqlGenerator" class = "waves-effect waves-light btn project-link-item">
+                                      <i class="material-icons right">cloud</i>
+                                      Try it out
+                                    </a>
+                                    <a href="https://github.com/jordanlitsas" class = "waves-effect waves-light btn project-link-item">
+                                      <i class="material-icons right">cloud</i>
+                                      GitHub
+                                    </a>
+                                  </div>
+                                </div>             
+                              </div>
+                          </div>
+                        </div>
+          </div>
+
+
+                  <div class="row"> 
+                    
+                    <!--Chess Card-->
+                   <div class="col s12 m6">
+                      <div class="card small blue-grey darken-1 responsive-card">
+                        <div class="card-content white-text">
+                          <span class="card-title">Text-Based Chess</span>
+                          <p>
+                              This project is a text-based chess game. It was created with C# as the main project in an Objected Oriented Programming class at Deakin University.
+                        </p>
+                        <div class = "row">
+                          <div class = "col s6">
+                            <ul>
+                              <li>C#</li>
+                            </ul>
+                          </div>
+                          <div class = "col s6">
+                            <div class = "project-links">
+                              <a href="/projects/chessProject" class = "waves-effect waves-light btn project-link-item">
+                                <i class="material-icons right">cloud</i>
+                                Try it out
+                              </a>
+                              <a href="https://github.com/jordanlitsas/Text-Chess" class = "waves-effect waves-light btn project-link-item">
+                                <i class="material-icons right">cloud</i>
+                                GitHub
+                              </a>
+                            </div>
+                          </div>             
+                        </div>
+                        
+                      </div>
+                    </div>
+                    </div> 
+                        
+                    <!--Weather App Card-->
+                        <div class="col s12 m6">
+                          <div class="card small blue-grey darken-1 responsive-card">
+                            <div class="card-content white-text">
+                              <span class="card-title">Weather App</span>
+                              <p>This app allows the user to generate a weather report by clicking an interactive Google Maps plugin.</p>
+                              <div class = "row">
+                                <div class = "col s6">
+                                  <ul>
+                                    <li>HTML, CSS, JS</li>
+                                    <li>Node.js</li>
+                                    <li>API</li>
+                                  </ul>
+                                </div>
+                                <div class = "col s6">
+                                  <div class = "project-links">
+                                    <a href="/projects/weatherApp" class = "waves-effect waves-light btn project-link-item">
+                                      <i class="material-icons right">cloud</i>
+                                      Try it out
+                                    </a>
+                                    <a href="https://github.com/jordanlitsas" class = "waves-effect waves-light btn project-link-item">
+                                      <i class="material-icons right">cloud</i>
+                                      GitHub
+                                    </a>
+                                  </div>
+                                </div>             
+                              </div>
+                          </div>
+                        </div>
+                                                </div>
+
+              </div>
+
+              
+
+              
+             
+
+       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    </body>
 </html>
-
-<!-- Modal Structure -->
-<div id="modal1" class="modal">
-    <div class="modal-content">
-        <h4>Tell me more about your project</h4>
-        <p>Help us share it!</p>
-        <div class="row">
-            <div class="input-field col s12">
-                <input value="" id="name" type="text" class="validate">
-                <label class="name" for="name">Name</label>
-            </div>
-            <div class="input-field col s12">
-                <input value="" id="title" type="text" class="validate">
-                <label class="title" for="title">Project Title</label>
-            </div>
-            <div class="input-field col s12">
-                <input value="" id="description" type="text" class="validate">
-                <label class="description" for="description">Project Description</label>
-            </div>
-            <div class="input-field col s12">
-                <input value="" id="video" type="text" class="validate">
-                <label class="video" for="video">Video Url </label>
-            </div>
-            <div class="input-field col s12">
-                <input value="" id="image" type="text" class="validate">
-                <label class="image" for="image">Image Url</label>
-            </div>
-        </div>
-    </div>
-    <div class="modal-footer">
-        <a onclick="newProject()" href="#!" class="modal-close waves-effect waves-green btn-flat">Submit</a>
-    </div>
-</div>
